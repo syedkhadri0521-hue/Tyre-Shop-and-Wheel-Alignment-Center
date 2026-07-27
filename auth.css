@@ -60,12 +60,12 @@ body{
 
 .login-card{
 
-    width:100%;
-    max-width:420px;
+    width:680px;
+    max-width:90%;
     background:var(--surface);
     border:1px solid var(--border);
     border-radius:18px;
-    padding:28px;
+    padding:20px 24px;
     box-shadow:0 20px 40px rgba(0,0,0,.08);
     transition:.3s;
 
@@ -90,8 +90,8 @@ body{
 
 .login-logo img{
 
-    width:55px;
-    height:55px;
+    width:45px;
+    height:45px;
     object-fit:cover;
     border-radius:50%;
 
@@ -161,8 +161,8 @@ body.dark .section-tag{
 
 .login-card h1{
 
-    font-size:28px;
-    margin-bottom:8px;
+    font-size:22px;
+    margin-bottom:6px;
     color:var(--heading);
 
 }
@@ -170,15 +170,15 @@ body.dark .section-tag{
 .login-text{
 
     color:var(--text-light);
-    line-height:1.6;
-    margin-bottom:22px;
-    font-size:15px;
+    line-height:1.5;
+    margin-bottom:16px;
+    font-size:14px;
 
 }
 
 .input-group{
 
-    margin-bottom:18px;
+    margin-bottom:12px;
 
 }
 
@@ -195,7 +195,7 @@ body.dark .section-tag{
 .input-group input{
 
     width:100%;
-    height:46px;
+    height:40px;
     border:1px solid var(--border);
     border-radius:10px;
     padding:0 14px;
@@ -237,7 +237,7 @@ body.dark .section-tag{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    margin:20px 0;
+    margin:14px 0;
 
 }
 
@@ -261,12 +261,12 @@ body.dark .section-tag{
 
 .login-btn{
     width:100%;
-    height:48px;
+    height:42px;
     background:var(--primary);
     color:#fff;
     border:none;
     border-radius:10px;
-    font-size:16px;
+    font-size:14px;
     font-weight:600;
     cursor:pointer;
     transition:.3s;
@@ -279,7 +279,7 @@ body.dark .section-tag{
 
 .login-footer{
 
-    margin-top:20px;
+    margin-top:14px;
     text-align:center;
     color:var(--text);
 
@@ -305,6 +305,85 @@ body.dark{
     --text:#d1d5db;
     --text-light:#94a3b8;
     --border:#334155;
+
+}
+.divider{
+
+    display:flex;
+    align-items:center;
+    margin:16px 0;
+
+}
+
+.divider::before,
+.divider::after{
+
+    content:"";
+    flex:1;
+    height:1px;
+    background:var(--border);
+
+}
+
+.divider span{
+
+    margin:0 12px;
+    color:var(--text-light);
+    font-size:14px;
+
+}
+
+
+.social-login{
+
+    display:flex;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+
+}
+
+.social-btn{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    width: 100%;
+    padding:10px;
+
+    border:1px solid var(--border);
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+    color:var(--heading);
+
+    background:var(--surface);
+
+    transition:.3s;
+
+}
+
+.social-btn:hover{
+
+    border-color:var(--primary);
+
+    color:var(--primary);
+
+    transform:translateY(-2px);
+
+}
+
+.google i{
+
+    color:#EA4335;
+
+}
+
+.apple i{
+
+    color:var(--heading);
 
 }
 
