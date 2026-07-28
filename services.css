@@ -1236,25 +1236,28 @@ color:var(--heading);
 
 }
 
+
 .service-cta-buttons .hero2-btn{
 
     min-width:220px;
 
     justify-content:center;
+    background:#fff;
+    color:var(--primary);
 
 }
 
-.outline-btn{
+.service-cta-buttons .outline-btn{
 
-    background:transparent;
+    border:2px solid rgba(255,255,255,.4);
 
     color:#fff;
 
-    border:2px solid rgba(255,255,255,.35);
+    background:transparent;
 
 }
 
-.outline-btn:hover{
+.service-cta-buttons .outline-btn:hover{
 
     background:#fff;
 
