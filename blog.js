@@ -102,7 +102,7 @@ const blogs = [
 {
     id: 4,
 
-    title: "How Often Should You Rotate Your Tyres?",
+    title: "How Often Should You Rotate Your Tyres? Know here",
 
     category: "Maintenance",
 

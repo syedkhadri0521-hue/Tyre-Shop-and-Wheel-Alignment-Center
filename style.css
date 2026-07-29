@@ -65,11 +65,22 @@ body.dark{
 
 header{
 
-    background: var(--surface);
-    position: sticky;
+    position: fixed;
     top: 0;
-    z-index: 999;
+    left: 0;
+
+    width: 100%;
+
+    background: var(--surface);
+
     border-bottom: 1px solid var(--border);
+
+    z-index: 9999;
+
+}
+body{
+
+    padding-top:82px;
 
 }
 
@@ -987,11 +998,11 @@ color:var(--heading);
 
 .cta-content{
 
-    width: 90%;
-    max-width: 750px;
+    width: 100%;
+    max-width: 100%;
     margin: auto;
-    background-color: var(--text);
-    padding: 18px 16px;
+    background-color: var(--primary);
+    padding: 44px 20px;
     border-radius: 16px;
     
 
@@ -1047,15 +1058,17 @@ color:var(--heading);
 
 .primary-btn{
 
-    background: var(--secondary);
+    background: var(--bg-color);
 
-    color: var(--surface);
+    color: var(--text);
+
 
 }
 
 .primary-btn:hover{
 
-    background: var(--primary);
+    background: var(--bg-color);
+    color: var(--text);
 
 }
 
@@ -1063,9 +1076,9 @@ color:var(--heading);
 
 .secondary-btn{
 
-    border: 2px solid var(--primary);
+    border: 2px solid var(--border);
 
-    color: var(--primary);
+    color: var(--bg-color);
 
 }
 
@@ -1073,7 +1086,7 @@ color:var(--heading);
 
     background: var(--primary);
 
-    color: var(--white);
+    color: var(--bg-color);
 
 }
 
@@ -1318,6 +1331,36 @@ MOBILE
 
 @media(max-width:768px){
 
+.dropdown{
+    position:relative;
+}
+.dropdown.active .dropdown-menu{
+
+    display:block;
+
+}
+.dropdown-menu{
+
+    position:static;
+
+    display:none;
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:none;
+
+    background:transparent;
+
+    border:none;
+
+    box-shadow:none;
+
+    padding:10px 0 0 20px;
+
+} 
+
 .menu-toggle{
 
 display:block;
@@ -1326,13 +1369,11 @@ display:block;
 
 nav{
 
-position:absolute;
-
-top:82px;
-
-left:-100%;
-
-width:100%;
+position: fixed;
+top: 82px;
+left: -100%;
+width: 100%;
+z-index: 998;
 
 background:var(--surface);
 
@@ -1350,6 +1391,7 @@ left:0;
 
 }
 
+
 nav ul{
 
 flex-direction:column;
@@ -1357,6 +1399,7 @@ flex-direction:column;
 gap:20px;
 
 }
+
 
 .mobile-login{
 

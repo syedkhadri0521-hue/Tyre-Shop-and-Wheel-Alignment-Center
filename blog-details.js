@@ -39,7 +39,7 @@ blogs.forEach(function(item){
 
 <h3>${item.title}</h3>
 
-<a href="blog-details.html?id=${item.id}">
+<a href="blog-details.html?id=${item.id}" class="read-more">
 Read More →
 </a>
 

@@ -866,7 +866,7 @@ color:var(--heading);
 
     inset:0;
 
-    background:rgba(10,15,30,.82);
+    background:var(--primary);
 
 }
 
@@ -924,7 +924,7 @@ color:var(--heading);
 
 .stats-header p{
 
-    color:#ddd;
+    color:var(--surface);
 
     line-height:30px;
 
@@ -990,7 +990,7 @@ color:var(--heading);
 
     background:rgba(249,115,22,.18);
 
-    color:var(--primary);
+    color:var(--icon-bg);
 
     font-size:40px;
 

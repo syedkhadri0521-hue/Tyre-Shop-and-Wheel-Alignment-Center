@@ -692,7 +692,7 @@ color:var(--heading);
 
 .blog-content h2{
     margin: 35px 0 15px;
-    color: var(--heading-color);
+    color: var(--heading);
 }
 
 .blog-content ul{
@@ -1198,12 +1198,15 @@ hr{
 
 .related-content a{
 
-    color:var(--primary-color);
+    color:var(--primary);
 
     text-decoration:none;
 
     font-weight:600;
 
+}
+.related-content a:hover{
+    color: var(--primary-hover);
 }
 
 .related-card{
