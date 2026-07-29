@@ -1454,9 +1454,7 @@ hr{
         display:block;
         padding:15px 0;
     }
-}
 
-    /* ---------- Change starts here ---------- */
 
     .dropdown-menu{
     position:static;
@@ -1496,7 +1494,7 @@ hr{
     }
 
 }
-
+}
 /*==============================
     RESPONSIVE - 768px
 ==============================*/
