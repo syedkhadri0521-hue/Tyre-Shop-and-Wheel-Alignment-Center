@@ -85,15 +85,15 @@ counters.forEach(counter => {
 });
 
 
-const dropdown = document.querySelector(".dropdown");
+const dropdownLink = document.querySelector(".dropdown > a");
 
-dropdown.addEventListener("click", function (e) {
+dropdownLink.addEventListener("click", function (e) {
 
     if (window.innerWidth <= 992) {
 
         e.preventDefault();
 
-        this.classList.toggle("active");
+        this.parentElement.classList.toggle("active");
 
     }
 
