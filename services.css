@@ -965,8 +965,8 @@ color:var(--heading);
     padding: 14px 16px;
     border-radius: 10px;
     background-color: var(--primary);
-    color: var(--surface);
     text-decoration: none;
+    
 }
 
 .hero2-btn:hover{

@@ -12,6 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="home2.css">
+    <link rel="stylesheet" href="css/appointment.css">
 </head>
 <body>
 
@@ -113,7 +114,7 @@ RTL
 
           <div class="hero2-buttons">
 
-    <a href="#" class="hero2-btn primary-btn">
+    <a href="#" class="hero2-btn primary-btn btn open-appointment">
         Book Appointment
     </a>
 
@@ -806,7 +807,7 @@ RTL
 
             <div class="cta2-buttons">
 
-                <a href="#" class="hero2-btn primary-btn">
+                <a href="#" class="hero2-btn primary-btn btn open-appointment">
                     Book Appointment
                 </a>
 
@@ -923,11 +924,140 @@ RTL
 
 </footer>
 
+<!-- ================= Appointment Modal ================= -->
+
+<div class="appointment-modal" id="appointmentModal">
+
+    <div class="appointment-box">
+
+        <button class="close-modal" id="closeModal">
+            <i data-lucide="x"></i>
+        </button>
+
+        <div class="appointment-header">
+
+           
+
+            <h2>Book Your Appointment</h2>
+
+            <p>
+                Fast, reliable tyre & wheel services in just a few clicks.
+            </p>
+
+        </div>
+
+        <form class="appointment-form">
+
+            <div class="form-grid">
+
+                <div class="form-group">
+
+                    <label>Full Name</label>
+
+                    <input
+                    type="text"
+                    placeholder="Enter Your Name">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Phone Number</label>
+
+                    <input
+                    type="tel"
+                    placeholder="+91 9876543210">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Vehicle Type</label>
+
+                    <select>
+
+                        <option>Select Vehicle</option>
+
+                        <option>Car</option>
+
+                        <option>SUV</option>
+
+                        <option>Bike</option>
+
+                        <option>Truck</option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Service</label>
+
+                    <select>
+
+                        <option>Select Service</option>
+
+                        <option>Wheel Alignment</option>
+
+                        <option>Wheel Balancing</option>
+
+                        <option>Tyre Replacement</option>
+
+                        <option>Puncture Repair</option>
+
+                        <option>Nitrogen Filling</option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Date</label>
+
+                    <input type="date">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Time</label>
+
+                    <input type="time">
+
+                </div>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Additional Message</label>
+
+                <textarea rows="3"
+                placeholder="Write your message..."></textarea>
+
+            </div>
+
+          
+
+            <button class="btn appointment-btn">
+
+                Book Appointment
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
 <script src="script.js"></script>
 
 <script>
     lucide.createIcons();
 </script>
-
+<script src="js/appointment.js"></script>
 </body>
 </html>
